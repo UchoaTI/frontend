@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 
+import './App.css'
+
+import backgroundImage from './assets/background.png'
+
 import Header from './components/Header'
 function App() {
     const [projects, setProjects] = useState(['desenvolvimento de app', 'frontend web']);
@@ -16,6 +20,8 @@ function App() {
         <>
 
             <Header title="projects" />
+
+            <img width={300}src={backgroundImage}/>
             <ul>
                 {projects.map(project => <li key={project}>{project}</li>)}
             </ul>
