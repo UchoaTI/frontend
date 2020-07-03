@@ -15,7 +15,7 @@ function App() {
         })
     },[]);
 
-    async function handleAddProject() {
+    async function handleAddProject(e) {
         //projects.push(`novo projeto ${Date.now()}`)
 
         //setProjects([...projects,`novo projeto ${Date.now()}`]);
